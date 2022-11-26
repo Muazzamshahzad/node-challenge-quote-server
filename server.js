@@ -19,11 +19,11 @@ app.get("/", function (request, response) {
 
 //START OF YOUR CODE...
 app.get("/quotes", function (req, res){
-  res.send(`${JSON.stringify(quotes)}}`);
+  res.send((quotes));
 })
 
 app.get("/quotes/random", function (req, res){
-  res.send(`${JSON.stringify(pickFromArray(quotes))}}`);
+  res.send((pickFromArray(quotes)));
 })
 //...END OF YOUR CODE
 
